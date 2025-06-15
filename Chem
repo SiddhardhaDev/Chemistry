@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydrocarbons & Alkanes: A Fun Learning Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to right top, #a8dadc, #f1faee);
+            color: #1d3557;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .section-card {
+            background-color: #ffffff;
+            border-radius: 1.5rem; /* Rounded corners */
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .accordion-header {
+            background-color: #457b9d;
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 0.75rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .accordion-header:hover {
+            background-color: #1d3557;
+        }
+        .accordion-content {
+            background-color: #f1faee;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin-top: 0.5rem;
+            overflow: hidden; /* Crucial for max-height transition */
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out, opacity 0.3s ease-out;
+            max-height: 0;
+            opacity: 0;
+        }
+        .accordion-content.active {
+            opacity: 1;
+        }
+        .image-container {
+            width: 100%;
+            height: 200px; /* Fixed height for consistency */
+            overflow: hidden;
+            border-radius: 0.75rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            display: flex; /* For centering content */
+            justify-content: center; /* For centering content */
+            align-items: center; /* For centering content */
+            background-color: #f8f8f8; /* Light background for images */
+        }
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; /* Ensures the whole image is visible */
+        }
+        .sub-section-title {
+            color: #1d3557;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            border-bottom: 2px solid #a8dadc;
+            padding-bottom: 0.5rem;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+        }
+        ol {
+            list-style-type: decimal;
+            margin-left: 1.5rem;
+        }
+        b {
+            color: #1d3557;
+        }
+        /* Style for chemical formulas within text */
+        .formula {
+            white-space: nowrap; /* Prevent formulas from breaking lines */
+            font-weight: 500; /* Make formulas slightly bolder */
+        }
+        .formula sub, .formula sup {
+            font-size: 0.7em; /* Adjust subscript/superscript size */
+            vertical-align: sub;
+        }
+        .formula sup {
+            vertical-align: super;
+        }
+    </style>
+</head>
+<body class="p-8">
+    <div class="container mx-auto">
+        <header class="text-center mb-12">
+            <h1 class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400 mb-4">
+                Hydrocarbons & Alkanes Unveiled!
+            </h1>
+            <p class="text-xl text-gray-700">Your ultimate guide to understanding the fascinating world of carbon and hydrogen compounds.</p>
+        </header>
+
+        <!-- Section: Introduction to Hydrocarbons -->
+        <section class="section-card">
+            <h2 class="text-4xl font-bold text-blue-800 mb-6">What are Hydrocarbons?</h2>
+            <p class="mb-4 text-lg">
+                Hydrocarbons are simply compounds made up of only carbon (<span class="formula">C</span>) and hydrogen (<span class="formula">H</span>) atoms. They're the building blocks for so much around us!
+            </p>
+
+            <h3 class="sub-section-title text-2xl">Everyday Examples:</h3>
+            <ul class="list-disc ml-6 mb-4 text-lg">
+                <li><b>LPG:</b> Liquefied Petroleum Gas – a common domestic fuel, known for minimal pollution.</li>
+                <li><b>CNG:</b> Compressed Natural Gas.</li>
+                <li><b>LNG:</b> Liquefied Natural Gas.</li>
+                <li><b>Petrol, Diesel, Kerosene:</b> Obtained from crude petroleum through a process called fractional distillation.</li>
+                <li><b>Coal Gas:</b> Produced from the destructive distillation of coal.</li>
+            </ul>
+            <p class="mb-4 text-lg">
+                Beyond fuels, hydrocarbons are crucial for making <b class="text-blue-700">polymers</b> (like polythene, polypropene, polystyrene),
+                used as <b class="text-blue-700">solvents</b> for paints, and act as starting materials for many <b class="text-blue-700">dyes and drugs</b> (think Benzene, Xylene).
+            </p>
+
+            <h3 class="sub-section-title text-2xl">Classification of Hydrocarbons:</h3>
+            <p class="mb-2 text-lg">Hydrocarbons are broadly classified into two main types:</p>
+            <ol class="list-decimal ml-6 text-lg">
+                <li>
+                    <b>Aliphatic Hydrocarbons:</b> These are "open-chain" hydrocarbons.
+                    <ul class="list-disc ml-6 mt-2">
+                        <li><b>Saturated Hydrocarbons (Alkanes):</b> All carbon valences are satisfied by single bonds. They are also called <b class="text-green-700">paraffins</b>.
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                                <div>
+                                    <p class="font-semibold text-gray-700">Methane (<span class="formula">CH<sub>4</sub></span>)</p>
+                                    <div class="image-container">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Methane-molecule-3D-SF-colored.png/320px-Methane-molecule-3D-SF-colored.png" onerror="this.onerror=null;this.src='https://placehold.co/300x200/a8dadc/1d3557?text=Image+Not+Available';" alt="Methane Structure">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-700">Ethane (<span class="formula">C<sub>2</sub>H<sub>6</sub></span>)</p>
+                                    <div class="image-container">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Ethane-3D-spacefill.png/320px-Ethane-3D-spacefill.png" onerror="this.onerror=null;this.src='https://placehold.co/300x200/a8dadc/1d3557?text=Image+Not+Available';" alt="Ethane Structure">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><b>Unsaturated Hydrocarbons (Alkenes & Alkynes):</b> Contain carbon-carbon double or triple bonds.
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                                <div>
+                                    <p class="font-semibold text-gray-700">Ethylene (Ethene, <span class="formula">CH<sub>2</sub>=CH<sub>2</sub></span>)</p>
+                                    <div class="image-container">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Ethylene_structure.png/320px-Ethylene_structure.png" onerror="this.onerror=null;this.src='https://placehold.co/300x200/a8dadc/1d3557?text=Image+Not+Available';" alt="Ethylene Structure">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-700">Acetylene (Ethyne, <span class="formula">CH&equiv;CH</span>)</p>
+                                    <div class="image-container">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Acetylene-CRC-MW.svg/320px-Acetylene-CRC-MW.svg.png" onerror="this.onerror=null;this.src='https://placehold.co/300x200/a8dadc/1d3557?text=Image+Not+Available';" alt="Acetylene Structure">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Aromatic Hydrocarbons:</b> Cyclic compounds obeying Huckel's rule (<span class="formula">(4n+2)&pi;</span> electrons).
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                        <div>
+                            <p class="font-semibold text-gray-700">Benzene (<span class="formula">C<sub>6</sub>H<sub>6</sub></span>)</p>
+                            <div class="image-container">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Benzene_structure.png/320px-Benzene_structure.png" onerror="this.onerror=null;this.src='https://placehold.co/300x200/a8dadc/1d3557?text=Image+Not+Available';" alt="Benzene Structure">
+                            </div>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-700">Toluene (<span class="formula">C<sub>7</sub>H<sub>8</sub></span>)</p>
+                            <div class="image-container">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Toluene-3D-balls.png/320px-Toluene-3D-balls.png" onerror="this.onerror=null;this.src='https://placehold.co/300x200/a8dadc/1d3557?text=Image+Not+Available';" alt="Toluene Structure">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Section: Alkanes - The Saturated Stars -->
+        <section class="section-card">
+            <h2 class="text-4xl font-bold text-blue-800 mb-6">Alkanes: The Saturated Stars</h2>
+            <p class="text-lg mb-4">
+                Alkanes are the simplest family of hydrocarbons. They're all about single bonds!
+            </p>
+            <ul class="list-disc ml-6 text-lg">
+                <li><b>General Formula:</b> <span class="formula">C<sub>n</sub>H<sub>2n+2</sub></span> (where 'n' is the number of carbon atoms).</li>
+                <li><b>Structure:</b> Carbon atoms in alkanes undergo <span class="formula">sp<sup>3</sup></span> hybridization, giving them a <b class="text-purple-700">tetrahedral geometry</b>. The H-C-H bond angle is a perfect <span class="formula">109&deg;28'</span>.</li>
+                <li><b>Bonds:</b> Only contain carbon-carbon (<span class="formula">C-C</span>) and carbon-hydrogen (<span class="formula">C-H</span>) <b class="text-green-700">sigma (<span class="formula">&sigma;</span>) bonds</b>. No double or triple bonds here!</li>
+                <li><b>Inertness:</b> Under normal conditions, alkanes are quite unreactive – they're "paraffins" (little affinity). They don't easily react with acids, bases, or most reagents.</li>
+                <li><b>Methane (<span class="formula">CH<sub>4</sub></span>):</b> The very first member, often found in coal mines and marshy areas.</li>
+            </ul>
+        </section>
+
+        <!-- Section: Preparations of Alkanes (Accordion) -->
+        <section class="section-card">
+            <h2 class="text-4xl font-bold text-blue-800 mb-6">Making Alkanes: Synthesis Secrets!</h2>
+            <div id="preparation-accordion">
+                <!-- Accordion Item 1: Catalytic Reduction -->
+                <div class="mb-4">
+                    <div class="accordion-header" onclick="toggleAccordion('prep-1')">
+                        <h3 class="text-xl font-semibold">I. Catalytic Reduction of Alkenes/Alkynes (Hydrogenation)</h3>
+                        <span class="arrow text-2xl">+</span>
+                    </div>
+                    <div class="accordion-content" id="prep-1">
+                        <p class="text-lg mb-2">Turning unsaturated hydrocarbons (alkenes and alkynes) into saturated alkanes by adding hydrogen (<span class="formula">H<sub>2</sub></span>).</p>
+                        <p class="font-semibold text-gray-700 mt-4">The Reaction:</p>
+                        <div class="image-container">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Alkene_hydrogenation.svg/320px-Alkene_hydrogenation.svg.png" onerror="this.onerror=null;this.src='https://placehold.co/400x150/a8dadc/1d3557?text=Image+Not+Available';" alt="Hydrogenation Reaction">
+                        </div>
+                        <p class="text-sm text-gray-600 mb-4">Example: <span class="formula">R-CH=CH-R' + H<sub>2</sub> &longrightarrow; R-CH<sub>2</sub>-CH<sub>2</sub>-R'</span></p>
+                        <ul class="list-disc ml-6 text-lg">
+                            <li><b>Catalysts:</b> Platinum (<span class="formula">Pt</span>), Palladium (<span class="formula">Pd</span>), Nickel (<span class="formula">Ni</span>), or <span class="formula">PtO<sub>2</sub></span> (Adam's catalyst).</li>
+                            <li><b>Conditions:</b> <span class="formula">Pt/Pd</span> work at room temperature. <span class="formula">Ni</span> needs higher temperatures (<span class="formula">200&deg;-300&deg;C</span>).</li>
+                            <li><b>Sabatier-Senderen's Reduction:</b> Specific name when Nickel is the catalyst.</li>
+                            <li><b>Mechanism:</b> Primarily <b class="text-red-700">heterogeneous catalysis</b> (reaction on catalyst surface) leading to cis addition of hydrogen.</li>
+                            <li><b>Homogeneous Catalysis:</b> Can also occur with catalysts like <b class="text-purple-700">Wilkinson's catalyst</b> (Chlorotris(triphenylphosphine) Rhodium(<span class="formula">I</span>)). This catalyst is selective!</li>
+                            <li><b>Cannot prepare:</b> Methane (<span class="formula">CH<sub>4</sub></span>).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 2: Reduction of Alkyl Halides -->
+                <div class="mb-4">
+                    <div class="accordion-header" onclick="toggleAccordion('prep-2')">
+                        <h3 class="text-xl font-semibold">II. Reduction of Alkyl Halides</h3>
+                        <span class="arrow text-2xl">+</span>
+                    </div>
+                    <div class="accordion-content" id="prep-2">
+                        <p class="text-lg mb-2">Converting alkyl halides (<span class="formula">R-X</span>) into alkanes (<span class="formula">R-H</span>).</p>
+                        <p class="font-semibold text-gray-700 mt-4">Key Methods:</p>
+                        <ul class="list-disc ml-6 text-lg">
+                            <li>Using <b>Zn-Cu couple</b> and ethyl alcohol (<span class="formula">C<sub>2</sub>H<sub>5</sub>OH</span>).</li>
+                            <li>Using <b>Zn</b> with <span class="formula">CH<sub>3</sub>COOH</span>, dil. <span class="formula">HCl</span>, or <span class="formula">NaOH</span>.</li>
+                            <li>Using <b>Metal Hydrides:</b>
+                                <ul>
+                                    <li><b class="text-green-700">LiAlH<sub>4</sub> (Lithium Aluminium Hydride):</b> Reduces primary & secondary halides (tertiary give alkenes).</li>
+                                    <li><b class="text-green-700">NaBH<sub>4</sub> (Sodium Borohydride):</b> Reduces secondary & tertiary halides (not primary).</li>
+                                    <li><b class="text-green-700">Ph<sub>3</sub>SnH (Triphenyl tin hydride):</b> Reduces ALL three types!</li>
+                                </ul>
+                            </li>
+                            <li><b>Catalytic Hydrogenolysis:</b> With <span class="formula">Pd-C</span> catalyst for iodides, <span class="formula">3&deg;</span> chlorides/bromides.</li>
+                            <li><b>Conc. HI & Red Phosphorus:</b> Very powerful! Reduces iodides, alcohols, aldehydes, ketones, and even acids to alkanes.
+                                <p class="text-sm text-gray-600 mt-2">Example: <span class="formula">R-I + 2HI <span style="font-size: 0.8em; vertical-align: super;">red P</span><sub>150&deg;C</sub> &longrightarrow; R-H + I<sub>2</sub></span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 3: Hydrolysis of Grignard Reagent -->
+                <div class="mb-4">
+                    <div class="accordion-header" onclick="toggleAccordion('prep-3')">
+                        <h3 class="text-xl font-semibold">III. Hydrolysis of Alkyl Magnesium Halide (Grignard Reagent)</h3>
+                        <span class="arrow text-2xl">+</span>
+                    </div>
+                    <div class="accordion-content" id="prep-3">
+                        <p class="text-lg mb-2">Grignard reagents (<span class="formula">RMgX</span>) react with water or dilute <span class="formula">HCl</span> to yield alkanes.</p>
+                        <p class="font-semibold text-gray-700 mt-4">The Reaction:</p>
+                        <div class="image-container">
+                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Grignard_Reagent_Hydrolysis.svg/300px-Grignard_Reagent_Hydrolysis.svg.png" onerror="this.onerror=null;this.src='https://placehold.co/400x150/a8dadc/1d3557?text=Image+Not+Available';" alt="Grignard Reagent Hydrolysis">
+                        </div>
+                        <p class="text-sm text-gray-600 mb-4">Example: <span class="formula">RMgX + H<sub>2</sub>O &longrightarrow; R-H + Mg(OH)X</span></p>
+                        <ul class="list-disc ml-6 text-lg">
+                            <li><b class="text-blue-700">Methane (<span class="formula">CH<sub>4</sub></span>):</b> Can be made by hydrolyzing methyl magnesium bromide/iodide, or by hydrolyzing beryllium carbide (<span class="formula">Be<sub>2</sub>C</span>) or aluminium carbide (<span class="formula">Al<sub>4</sub>C<sub>3</sub></span>).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 4: Decarboxylation of Fatty Acids -->
+                <div class="mb-4">
+                    <div class="accordion-header" onclick="toggleAccordion('prep-4')">
+                        <h3 class="text-xl font-semibold">IV. Decarboxylation of Fatty Acids</h3>
+                        <span class="arrow text-2xl">+</span>
+                    </div>
+                    <div class="accordion-content" id="prep-4">
+                        <p class="text-lg mb-2">Heating the sodium salt of an alkanoic acid with soda lime (<span class="formula">CaO + NaOH</span>) gives an alkane with one less carbon atom.</p>
+                        <p class="font-semibold text-gray-700 mt-4">The Reaction:</p>
+                        <p class="text-sm text-gray-600 mb-4"><span class="formula">R-COONa + NaOH <span style="font-size: 0.8em; vertical-align: super;">CaO</span><sub>&Delta;</sub> &longrightarrow; R-H + Na<sub>2</sub>CO<sub>3</sub></span></p>
+                        <ul class="list-disc ml-6 text-lg">
+                            <li><b>Chain Shortening:</b> The resulting alkane has one carbon less than the original acid.</li>
+                            <li><b>Soda Lime (<span class="formula">CaO + NaOH</span>):</b> <span class="formula">CaO</span> acts as a water-absorbing agent.</li>
+                            <li><b class="text-red-700">Limitation:</b> Not a generally useful method for preparation.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 5: Wurtz Reaction -->
+                <div class="mb-4">
+                    <div class="accordion-header" onclick="toggleAccordion('prep-5')">
+                        <h3 class="text-xl font-semibold">V. Wurtz Reaction</h3>
+                        <span class="arrow text-2xl">+</span>
+                    </div>
+                    <div class="accordion-content" id="prep-5">
+                        <p class="text-lg mb-2">Alkyl halides react with sodium metal in the presence of dry ether to form alkanes.</p>
+                        <p class="font-semibold text-gray-700 mt-4">The Reaction:</p>
+                        <div class="image-container">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Wurtz_reaction.svg/300px-Wurtz_reaction.svg.png" onerror="this.onerror=null;this.src='https://placehold.co/400x150/a8dadc/1d3557?text=Image+Not+Available';" alt="Wurtz Reaction">
+                        </div>
+                        <p class="text-sm text-gray-600 mb-4"><span class="formula">R-X + 2Na + X-R <span style="font-size: 0.8em; vertical-align: super;">Dry ether</span><sub>&Delta;</sub> &longrightarrow; R-R + 2NaX</span></p>
+                        <ul class="list-disc ml-6 text-lg">
+                            <li><b>Mechanism:</b> Can proceed via ionic or free radical pathways.</li>
+                            <li><b class="text-red-700">Limitations:</b>
+                                <ul>
+                                    <li>Fails for tertiary alkyl halides (forms alkenes).</li>
+                                    <li>Not suitable for odd-numbered carbon alkanes (due to mixed products if different halides are used).</li>
+                                    <li>Cannot prepare Methane (<span class="formula">CH<sub>4</sub></span>).</li>
+                                </ul>
+                            </li>
+                            <li><b>Wurtz-Fittig Reaction:</b> A variation using haloarenes and alkyl halides.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 6: Frankland's Reaction -->
+                <div class="mb-4">
+                    <div class="accordion-header" onclick="toggleAccordion('prep-6')">
+                        <h3 class="text-xl font-semibold">VI. Frankland's Reaction</h3>
+                        <span class="arrow text-2xl">+</span>
+                    </div>
+                    <div class="accordion-content" id="prep-6">
+                        <p class="text-lg mb-2">Similar to Wurtz, but uses Zinc (<span class="formula">Zn</span>) metal instead of Sodium (<span class="formula">Na</span>).</p>
+                        <p class="font-semibold text-gray-700 mt-4">The Reaction:</p>
+                        <p class="text-sm text-gray-600 mb-4"><span class="formula">R-X + Zn + X-R <span style="font-size: 0.8em; vertical-align: super;">Dry ether</span><sub>&Delta;</sub> &longrightarrow; R-R + ZnX<sub>2</sub></span></p>
+                        <ul class="list-disc ml-6 text-lg">
+                            <li>Both Wurtz & Frankland are best for alkanes with an <b class="text-green-700">even number of carbon atoms</b>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 7: Corey-House Synthesis -->
+                <div class="mb-4">
+                    <div class="accordion-header" onclick="toggleAccordion('prep-7')">
+                        <h3 class="text-xl font-semibold">Corey-House Synthesis</h3>
+                        <span class="arrow text-2xl">+</span>
+                    </div>
+                    <div class="accordion-content" id="prep-7">
+                        <p class="text-lg mb-2">A versatile method for preparing alkanes, often giving better control over the product than Wurtz reaction.</p>
+                        <p class="font-semibold text-gray-700 mt-4">Key Steps:</p>
+                        <ol class="list-decimal ml-6 text-lg">
+                            <li>Alkyl halide with Lithium in ether forms alkyllithium (<span class="formula">CH<sub>3</sub>Br + 2Li &longrightarrow; CH<sub>3</sub>Li + LiBr</span>).</li>
+                            <li>Alkyllithium reacts with Cuprous Iodide (<span class="formula">CuI</span>) to form Lithium Dialkylcuprate (<span class="formula">I</span>), also known as <b class="text-purple-700">Gilman's reagent</b> (<span class="formula">2CH<sub>3</sub>Li + CuI &longrightarrow; Li(CH<sub>3</sub>)<sub>2</sub>Cu + LiI</span>).</li>
+                            <li>Gilman's reagent then reacts with another alkyl halide to produce the alkane (<span class="formula">CH<sub>3</sub>CH<sub>2</sub>Br + Li(CH<sub>3</sub>)<sub>2</sub>Cu &longrightarrow; CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>3</sub> + CH<sub>3</sub>Cu + LiBr</span>).</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 8: Kolbe's Electrolysis method -->
+                <div class="mb-4">
+                    <div class="accordion-header" onclick="toggleAccordion('prep-8')">
+                        <h3 class="text-xl font-semibold">VII. Kolbe's Electrolysis Method (Decarboxylation)</h3>
+                        <span class="arrow text-2xl">+</span>
+                    </div>
+                    <div class="accordion-content" id="prep-8">
+                        <p class="text-lg mb-2">Electrolysis of a concentrated aqueous solution of an alkali (<span class="formula">Na</span> or <span class="formula">K</span>) salt of a saturated monocarboxylic acid using <span class="formula">Pt</span> electrodes produces alkanes.</p>
+                        <p class="font-semibold text-gray-700 mt-4">The Reaction:</p>
+                        <div class="image-container">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Kolbe_electrolysis_mechanism.svg/300px-Kolbe_electrolysis_mechanism.svg.png" onerror="this.onerror=null;this.src='https://placehold.co/400x150/a8dadc/1d3557?text=Image+Not+Available';" alt="Kolbe Electrolysis">
+                        </div>
+                        <p class="text-sm text-gray-600 mb-4"><span class="formula">2RCOONa + 2H<sub>2</sub>O &longrightarrow; R-R + 2CO<sub>2</sub> + 2NaOH + H<sub>2</sub></span></p>
+                        <ul class="list-disc ml-6 text-lg">
+                            <li>Alkanes with an <b class="text-green-700">even number of carbons</b> are formed at the anode.</li>
+                            <li>Involves a free radical mechanism at the anode.</li>
+                            <li><b class="text-red-700">Cannot prepare:</b> Methane (<span class="formula">CH<sub>4</sub></span>).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 9: Wolff-Kishner Reduction -->
+                <div class="mb-4">
+                    <div class="accordion-header" onclick="toggleAccordion('prep-9')">
+                        <h3 class="text-xl font-semibold">VIII. Wolff-Kishner Reduction</h3>
+                        <span class="arrow text-2xl">+</span>
+                    </div>
+                    <div class="accordion-content" id="prep-9">
+                        <p class="text-lg mb-2">This reaction converts the carbonyl group (<span class="formula">&gt;C=O</span>) of aldehydes and ketones into a methylene group (<span class="formula">&gt;CH<sub>2</sub></span>), reducing them to alkanes.</p>
+                        <p class="font-semibold text-gray-700 mt-4">The Reaction:</p>
+                        <div class="image-container">
+                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Wolff-Kishner_reaction.svg/300px-Wolff-Kishner_reaction.svg.png" onerror="this.onerror=null;this.src='https://placehold.co/400x150/a8dadc/1d3557?text=Image+Not+Available';" alt="Wolff-Kishner Reduction">
+                        </div>
+                        <p class="text-sm text-gray-600 mb-4"><span class="formula">Aldehyde/Ketone <span style="font-size: 0.8em; vertical-align: super;">H<sub>2</sub>N.NH<sub>2</sub> (Hydrazine) / C<sub>2</sub>H<sub>5</sub>ONa or NaOH (180&deg;C)</span> &longrightarrow; Alkane + N<sub>2</sub></span></p>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 10: Individual Methane Preparations -->
+                <div class="mb-4">
+                    <div class="accordion-header" onclick="toggleAccordion('prep-10')">
+                        <h3 class="text-xl font-semibold">Individual Methods for Methane (<span class="formula">CH<sub>4</sub></span>)</h3>
+                        <span class="arrow text-2xl">+</span>
+                    </div>
+                    <div class="accordion-content" id="prep-10">
+                        <ul class="list-disc ml-6 text-lg">
+                            <li><b>From CO:</b> Carbon monoxide (<span class="formula">CO</span>) + Hydrogen (<span class="formula">3H<sub>2</sub></span>) over <span class="formula">Ni</span> (<span class="formula">200&deg;-300&deg;C</span>) <span class="formula">&longrightarrow; CH<sub>4</sub> + H<sub>2</sub>O</span>.</li>
+                            <li><b>From <span class="formula">CO<sub>2</sub></span>:</b> Carbon dioxide (<span class="formula">CO<sub>2</sub></span>) + Hydrogen (<span class="formula">4H<sub>2</sub></span>) over <span class="formula">Ni</span> (<span class="formula">200&deg;-300&deg;C</span>) <span class="formula">&longrightarrow; CH<sub>4</sub> + 2H<sub>2</sub>O</span>.</li>
+                            <li>Also from hydrolysis of Beryllium carbide (<span class="formula">Be<sub>2</sub>C</span>) or Aluminum carbide (<span class="formula">Al<sub>4</sub>C<sub>3</sub></span>) (as mentioned in Grignard section).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 11: Other Reactions -->
+                <div class="mb-4">
+                    <div class="accordion-header" onclick="toggleAccordion('prep-11')">
+                        <h3 class="text-xl font-semibold">Other Interesting Reactions!</h3>
+                        <span class="arrow text-2xl">+</span>
+                    </div>
+                    <div class="accordion-content" id="prep-11">
+                        <ul class="list-disc ml-6 text-lg">
+                            <li><b>Alkyl Amine + Grignard Reagent:</b> <span class="formula">R-NH<sub>2</sub> + R'MgX &longrightarrow; R'-H + R-NHMgX</span></li>
+                            <li><b>Alcohol + Grignard Reagent (Zerewitinoff's Reaction):</b> <span class="formula">R'-OH + RMgX &longrightarrow; R-H + R'-OMgX</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section: Physical Properties of Alkanes -->
+        <section class="section-card">
+            <h2 class="text-4xl font-bold text-blue-800 mb-6">Alkanes: What They're Like (Physical Properties)</h2>
+            <ul class="list-disc ml-6 text-lg">
+                <li><b>Nonpolar:</b> Due to covalent <span class="formula">C-C</span> and <span class="formula">C-H</span> bonds.</li>
+                <li><b>Low Boiling Points:</b> Because of weak van der Waals forces.</li>
+                <li><b>States at <span class="formula">298K</span>:</b>
+                    <ul>
+                        <li><span class="formula">C<sub>1</sub>-C<sub>4</sub></span> are <b>gases</b>.</li>
+                        <li><span class="formula">C<sub>5</sub>-C<sub>17</sub></span> are <b>liquids</b>.</li>
+                        <li>Above <span class="formula">C<sub>17</sub></span> are <b>solids</b>.</li>
+                    </ul>
+                </li>
+                <li><b>Density:</b> Lighter than water. All are heavier than air, <b class="text-red-700">except methane (<span class="formula">CH<sub>4</sub></span>)</b>.</li>
+                <li><b>Boiling Point Trends:</b>
+                    <ul>
+                        <li><b class="text-green-700">Increases</b> with increasing molecular weight.</li>
+                        <li>For isomers, <b class="text-red-700">more branches = lower boiling point</b> (less surface area for intermolecular forces).
+                            <p class="italic text-gray-600">Example: Pentane > Isopentane > Neopentane</p>
+                        </li>
+                    </ul>
+                </li>
+                <li><b>Melting Point Trends:</b>
+                    <ul>
+                        <li>Alkanes with <b class="text-green-700">even 'C' atoms</b> often have higher melting points due to better packing.</li>
+                        <li>More <b class="text-purple-700">spherical shape = highest melting point</b> among isomers.
+                            <p class="italic text-gray-600">Example: 2,2-dimethylpropane (Neopentane) has a higher MP than n-pentane or isopentane.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li><b>Solubility:</b> Soluble in organic solvents. Solubility <b class="text-red-700">decreases</b> with increasing molecular weight.</li>
+            </ul>
+        </section>
+
+        <!-- Section: Chemical Properties of Alkanes (Accordion) -->
+        <section class="section-card">
+            <h2 class="text-4xl font-bold text-blue-800 mb-6">Alkanes in Action: Chemical Properties!</h2>
+            <p class="text-lg mb-4">Though stable, alkanes undergo substitution reactions under specific conditions.</p>
+            <div id="chemical-accordion">
+                <!-- Accordion Item 1: Halogenation -->
+                <div class="mb-4">
+                    <div class="accordion-header" onclick="toggleAccordion('chem-1')">
+                        <h3 class="text-xl font-semibold">I. Halogenation (Free Radical Mechanism!)</h3>
+                        <span class="arrow text-2xl">+</span>
+                    </div>
+                    <div class="accordion-content" id="chem-1">
+                        <p class="text-lg mb-2">Hydrogen atoms are replaced by halogen atoms (<span class="formula">Cl<sub>2</sub>, Br<sub>2</sub></span>).</p>
+                        <p class="font-semibold text-gray-700 mt-4">Conditions:</p>
+                        <ul class="list-disc ml-6 text-lg">
+                            <li>Sunlight or <span class="formula">UV</span> light, OR</li>
+                            <li>High temperatures (<span class="formula">573K-773K</span>) in the dark.</li>
+                            <li>Forms a <b class="text-orange-700">mixture of halogen derivatives</b>.</li>
+                        </ul>
+                        <p class="font-semibold text-gray-700 mt-4">Reactivity Orders:</p>
+                        <ul class="list-disc ml-6 text-lg">
+                            <li><b>Halogen Reactivity:</b> <span class="formula">F<sub>2</sub> &gt; Cl<sub>2</sub> &gt; Br<sub>2</sub> &gt; I<sub>2</sub></span>
+                                <ul>
+                                    <li><b class="text-red-700">Fluorination:</b> Explosive, so <span class="formula">F<sub>2</sub></span> is diluted.</li>
+                                    <li><b class="text-blue-700">Iodination:</b> Very slow and reversible; requires oxidizing agents (<span class="formula">HNO<sub>3</sub>, HIO<sub>3</sub></span>) to remove <span class="formula">HI</span>.</li>
+                                </ul>
+                            </li>
+                            <li><b>Hydrogen Reactivity in Alkane:</b> <span class="formula">3&deg;H &gt; 2&deg;H &gt; 1&deg;H</span> (tertiary > secondary > primary)</li>
+                        </ul>
+                        <p class="font-semibold text-gray-700 mt-4">Mechanism: Free Radical Chain Reaction</p>
+                        <ol class="list-decimal ml-6 text-lg">
+                            <li><b>Chain Initiation:</b> Halogen molecule splits into free radicals (<span class="formula">Cl-Cl <span style="font-size: 0.8em; vertical-align: super;">h&nu;</span> &longrightarrow; 2Cl&bull;</span>).
+                                <div class="image-container">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Chlorine_Radical_Formation.svg/300px-Chlorine_Radical_Formation.svg.png" onerror="this.onerror=null;this.src='https://placehold.co/400x100/a8dadc/1d3557?text=Image+Not+Available';" alt="Chain Initiation">
+                                </div>
+                            </li>
+                            <li><b>Chain Propagation:</b> Radicals react, forming new radicals and products (<span class="formula">CH<sub>4</sub> + Cl&bull; &longrightarrow; CH<sub>3</sub>&bull; + HCl</span>; <span class="formula">CH<sub>3</sub>&bull; + Cl<sub>2</sub> &longrightarrow; CH<sub>3</sub>Cl + Cl&bull;</span>).
+                                <div class="image-container">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Radical_Propogation.svg/300px-Radical_Propogation.svg.png" onerror="this.onerror=null;this.src='https://placehold.co/400x100/a8dadc/1d3557?text=Image+Not+Available';" alt="Chain Propagation">
+                                </div>
+                            </li>
+                            <li><b>Chain Termination:</b> Radicals combine to form stable molecules (<span class="formula">CH<sub>3</sub>&bull; + CH<sub>3</sub>&bull; &longrightarrow; C<sub>2</sub>H<sub>6</sub></span>; <span class="formula">CH<sub>3</sub>&bull; + Cl&bull; &longrightarrow; CH<sub>3</sub>Cl</span>; <span class="formula">Cl&bull; + Cl&bull; &longrightarrow; Cl<sub>2</sub></span>).
+                                <div class="image-container">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Radical_Termination.svg/300px-Radical_Termination.svg.png" onerror="this.onerror=null;this.src='https://placehold.co/400x100/a8dadc/1d3557?text=Image+Not+Available';" alt="Chain Termination">
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 2: Combustion -->
+                <div class="mb-4">
+                    <div class="accordion-header" onclick="toggleAccordion('chem-2')">
+                        <h3 class="text-xl font-semibold">II. Combustion (Burning for Energy!)</h3>
+                        <span class="arrow text-2xl">+</span>
+                    </div>
+                    <div class="accordion-content" id="chem-2">
+                        <p class="text-lg mb-2">Alkanes burn in excess oxygen to produce carbon dioxide, water, and a lot of heat (why they are fuels!).</p>
+                        <p class="font-semibold text-gray-700 mt-4">General Reaction:</p>
+                        <p class="text-sm text-gray-600 mb-4"><span class="formula">C<sub>n</sub>H<sub>2n+2</sub> + (&frac32;n+&frac12;)O<sub>2</sub> &longrightarrow; nCO<sub>2</sub> + (n+1)H<sub>2</sub>O + Energy</span></p>
+                        <p class="text-lg">Example: <span class="formula">CH<sub>4</sub> + 2O<sub>2</sub> &longrightarrow; CO<sub>2</sub> + 2H<sub>2</sub>O + 890 KJ mole<sup>-1</sup></span></p>
+                        <p class="font-semibold text-gray-700 mt-4">Incomplete Combustion:</p>
+                        <p class="text-lg mb-2">With insufficient oxygen, alkanes can form <b class="text-red-700">carbon black (soot)</b>.</p>
+                        <p class="text-sm text-gray-600 mb-4"><span class="formula">CH<sub>4</sub> + O<sub>2</sub> &longrightarrow; C + 2H<sub>2</sub>O</span></p>
+                        <ul class="list-disc ml-6 text-lg">
+                            <li>Carbon black is used in printer ink, black pigments, and filters.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 3: Controlled Oxidation -->
+                <div class="mb-4">
+                    <div class="accordion-header" onclick="toggleAccordion('chem-3')">
+                        <h3 class="text-xl font-semibold">III. Controlled Oxidation</h3>
+                        <span class="arrow text-2xl">+</span>
+                    </div>
+                    <div class="accordion-content" id="chem-3">
+                        <p class="text-lg mb-2">Partial oxidation of alkanes to form other compounds under specific conditions.</p>
+                        <ul class="list-disc ml-6 text-lg">
+                            <li><b>To Methanol:</b> Methane (<span class="formula">CH<sub>4</sub></span>) + Oxygen (<span class="formula">O<sub>2</sub></span>) via copper tube (<span class="formula">523K, 100 atm</span>) <span class="formula">&longrightarrow; 2CH<sub>3</sub>OH</span> (Methanol).</li>
+                            <li><b>To Methanal (Formaldehyde):</b> Methane (<span class="formula">CH<sub>4</sub></span>) + Oxygen (<span class="formula">O<sub>2</sub></span>) over heated molybdenum oxide (<span class="formula">Mo<sub>2</sub>O<sub>3</sub></span>) <span class="formula">&longrightarrow; HCHO + H<sub>2</sub>O</span> (Methanal).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 4: Isomerization -->
+                <div class="mb-4">
+                    <div class="accordion-header" onclick="toggleAccordion('chem-4')">
+                        <h3 class="text-xl font-semibold">IV. Isomerization</h3>
+                        <span class="arrow text-2xl">+</span>
+                    </div>
+                    <div class="accordion-content" id="chem-4">
+                        <p class="text-lg mb-2">Converting straight-chain (n-alkanes) into branched-chain alkanes.</p>
+                        <p class="font-semibold text-gray-700 mt-4">Conditions:</p>
+                        <ul class="list-disc ml-6 text-lg">
+                            <li>Heating with anhydrous aluminum chloride (<span class="formula">AlCl<sub>3</sub></span>) and hydrogen chloride (<span class="formula">HCl</span>).</li>
+                        </ul>
+                        <p class="text-sm text-gray-600 mt-4">Example: <span class="formula">CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub></span> (n-butane) <span class="formula"><span style="font-size: 0.8em; vertical-align: super;">AlCl<sub>3</sub>/HCl</span> &longrightarrow; CH<sub>3</sub>CH(CH<sub>3</sub>)CH<sub>3</sub></span> (isobutane)</p>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 5: Aromatization/Catalytic Reforming -->
+                <div class="mb-4">
+                    <div class="accordion-header" onclick="toggleAccordion('chem-5')">
+                        <h3 class="text-xl font-semibold">V. Aromatization or Catalytic Reforming</h3>
+                        <span class="arrow text-2xl">+</span>
+                    </div>
+                    <div class="accordion-content" id="chem-5">
+                        <p class="text-lg mb-2">Transforming alkanes (min. 6 carbons) into aromatic compounds.</p>
+                        <p class="font-semibold text-gray-700 mt-4">Conditions:</p>
+                        <ul class="list-disc ml-6 text-lg">
+                            <li>Heating at <span class="formula">773K</span> and <span class="formula">10-20 atm</span> pressure.</li>
+                            <li>Catalysts: Chromium, Molybdenum, or Vanadium oxides.</li>
+                        </ul>
+                        <p class="text-sm text-gray-600 mt-4">Example: <span class="formula">n-heptane <span style="font-size: 0.8em; vertical-align: super;">Cr<sub>2</sub>O<sub>3</sub>/Al<sub>2</sub>O<sub>3</sub>, 773K</span> &longrightarrow;</span> Methyl benzene (Toluene)</p>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 6: Reaction with Steam -->
+                <div class="mb-4">
+                    <div class="accordion-header" onclick="toggleAccordion('chem-6')">
+                        <h3 class="text-xl font-semibold">VI. Reaction with Steam</h3>
+                        <span class="arrow text-2xl">+</span>
+                    </div>
+                    <div class="accordion-content" id="chem-6">
+                        <p class="text-lg mb-2">Methane (<span class="formula">CH<sub>4</sub></span>) reacts with steam (<span class="formula">H<sub>2</sub>O</span>) to produce carbon monoxide (<span class="formula">CO</span>) and hydrogen (<span class="formula">H<sub>2</sub></span>).</p>
+                        <p class="font-semibold text-gray-700 mt-4">Conditions:</p>
+                        <ul class="list-disc ml-6 text-lg">
+                            <li><span class="formula">1000&deg;C</span> in the presence of a nickel (<span class="formula">Ni</span>) catalyst.</li>
+                        </ul>
+                        <p class="text-sm text-gray-600 mt-4">Reaction: <span class="formula">CH<sub>4</sub> + H<sub>2</sub>O <span style="font-size: 0.8em; vertical-align: super;">Ni, 1000&deg;C</span> &longrightarrow; CO + 3H<sub>2</sub></span></p>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 7: Pyrolysis (Cracking) -->
+                <div class="mb-4">
+                    <div class="accordion-header" onclick="toggleAccordion('chem-7')">
+                        <h3 class="text-xl font-semibold">VII. Pyrolysis (Cracking)</h3>
+                        <span class="arrow text-2xl">+</span>
+                    </div>
+                    <div class="accordion-content" id="chem-7">
+                        <p class="text-lg mb-2">Decomposition of higher alkanes into smaller fragments by strong heating in the absence of air. It's a <b class="text-orange-700">free radical reaction</b>.</p>
+                        <ul class="list-disc ml-6 text-lg">
+                            <li>Important for producing petrol, diesel from kerosene oil or crude oil.</li>
+                        </ul>
+                        <p class="text-sm text-gray-600 mt-4">Example: <span class="formula">CH<sub>4</sub> <span style="font-size: 0.8em; vertical-align: super;">1000&deg;C</span> &longrightarrow; C + 2H<sub>2</sub></span></p>
+                        <p class="text-sm text-gray-600">Example: <span class="formula">C<sub>2</sub>H<sub>6</sub> <span style="font-size: 0.8em; vertical-align: super;">450&deg;C</span> &longrightarrow; C<sub>2</sub>H<sub>4</sub> + H<sub>2</sub></span></p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section: Uses of Hydrocarbons -->
+        <section class="section-card">
+            <h2 class="text-4xl font-bold text-blue-800 mb-6">Beyond the Lab: Uses of Hydrocarbons!</h2>
+            <ul class="list-disc ml-6 text-lg">
+                <li><b>Fuels:</b> Petrol, diesel, kerosene, LPG, CNG, LNG, coal gas.</li>
+                <li><b>Polymers:</b> Starting materials for polythene, polypropene, polystyrene.</li>
+                <li><b>Solvents:</b> Higher hydrocarbons are used as paint solvents.</li>
+                <li><b>Dyes & Drugs:</b> Important starting materials (e.g., Benzene, Xylene).</li>
+                <li><b>Specific Compounds:</b>
+                    <ul>
+                        <li><b><span class="formula">CCl<sub>4</sub></span> (Carbon Tetrachloride / Pyrene):</b> Fire extinguisher.</li>
+                        <li><b><span class="formula">C<sub>2</sub>Cl<sub>6</sub></span>:</b> Artificial camphor.</li>
+                        <li><b><span class="formula">CCl<sub>2</sub>F<sub>2</sub></span> (Freon / Dichlorodifluoromethane):</b> Refrigerant.</li>
+                        <li><b><span class="formula">CF<sub>2</sub>Cl<sub>2</sub></span> (CFC-11 / Chlorotrifluoromethane):</b> Refrigerant and in aerosol sprays.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <footer class="text-center text-gray-600 mt-12 text-sm">
+            <p>&copy; 2025 Hydrocarbon Explorer. All rights reserved.</p>
+            <p>Remember, understanding the basics helps solve complex problems!</p>
+        </footer>
+    </div>
+
+    <script>
+        // JavaScript for accordion functionality
+        function toggleAccordion(id) {
+            const content = document.getElementById(id);
+            const header = content.previousElementSibling;
+            const arrow = header.querySelector('.arrow');
+
+            if (content.classList.contains('active')) {
+                // Collapse
+                content.style.maxHeight = '0';
+                content.style.paddingTop = '0';
+                content.style.paddingBottom = '0';
+                content.style.opacity = '0';
+                content.classList.remove('active');
+                arrow.textContent = '+';
+            } else {
+                // Expand
+                // Close all other open accordions in the same parent
+                const parentAccordion = content.closest('[id$="-accordion"]');
+                if (parentAccordion) {
+                    const activeContents = parentAccordion.querySelectorAll('.accordion-content.active');
+                    activeContents.forEach(activeContent => {
+                        if (activeContent.id !== id) {
+                            activeContent.style.maxHeight = '0';
+                            activeContent.style.paddingTop = '0';
+                            activeContent.style.paddingBottom = '0';
+                            activeContent.style.opacity = '0';
+                            activeContent.classList.remove('active');
+                            activeContent.previousElementSibling.querySelector('.arrow').textContent = '+';
+                        }
+                    });
+                }
+
+                content.classList.add('active');
+                // Set max-height to scrollHeight dynamically to enable transition
+                content.style.maxHeight = content.scrollHeight + "px";
+                content.style.paddingTop = '1.5rem';
+                content.style.paddingBottom = '1.5rem';
+                content.style.opacity = '1';
+                arrow.textContent = '-';
+            }
+        }
+
+        // Initial setup to ensure max-height is 0 and opacity is 0 for all accordion contents on load
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.accordion-content').forEach(content => {
+                content.style.maxHeight = '0';
+                content.style.paddingTop = '0';
+                content.style.paddingBottom = '0';
+                content.style.opacity = '0';
+            });
+        });
+    </script>
+</body>
+</html>
